@@ -1,0 +1,78 @@
+<!DOCTYPE html >
+<html> 
+    <head> 
+      <meta charset="UTF-8"/> 
+     <!-- <link rel="stylesheet" type="text/css" href="Estilo.css" media="screen" />-->
+      <title> Registro Estudiantil </title>
+    </head>
+ <center> 
+    <div id="head">
+      <h1> <br> Registro estudiantil <br></h1>
+    </div>
+   <center>
+  <body>
+   <center> 
+    <form id="table" action="Form.php" method="post">
+      <table>
+        <tr>
+          <td id="tblizq"><?php echo  ?></td>
+          <td id="tblder"><input type="text" name="nombre" value=""><br><br></td>
+        </tr>
+        
+        <tr>
+          <td id="tblizq">Apellido: </td>
+          <td id="tblder"><input type="text" name="apellido" value=""><br><br></td>
+        </tr>
+        
+        <tr>
+          <td id="tblizq">Cédula: </td>
+          <td id="tblder"><input type="text" name="cedula" value="" placeholder="x-xxx-xxx"><br><br></td>
+        </tr>
+        
+        <tr>
+          <td id="tblizq">Sede:</td>
+          <td id="tblder"><select name="sede">
+          <option value="Azuero">Azuero</option>
+          <option value="Bocas del Toro">Bocas del Toro</option>
+          <option value="Chiriquí">Chiriquí</option>
+          <option value="Coclé">Coclé</option>
+          <option value="Colón">Colón</option>
+          <option value="Panamá">Panamá</option>
+          <option value="Veraguas">Veraguas</option>
+          <option value="Panamá Oeste">Panamá Oeste</option>    
+        </select><br><br>
+          </td>
+        </tr>
+        
+        <tr>
+          <td id="tblizq">Turno:</td>
+          <td id="tblder"> 
+            <input type="radio" name="turno" value="Matutino"> Matutino
+            
+            <input type="radio" name="turno" value="Vespertino"> Vespertino
+           
+            <input type="radio" name="turno" value="Nocturno"> Nocturno<br><br>
+
+            </td>
+        </tr>
+        
+        <tr>
+          <td id="tblizq">Teléfono:</td>
+          <td id="tblder"><input type="text" name="tel" value="" placeholder="xxx-xxxx"><br><br></td>
+        </tr>
+        
+        <tr>
+          <td id="tblizq">Correo Electrónico: </td>
+          <td id="tblder"><input type="email" name="email"></td>
+        </tr>
+      </table>
+       
+      <br> <br>
+      <input type="submit" value="Enviar">
+      <input type="reset">
+    </form>
+
+   </center>
+
+  </body> 
+</html>

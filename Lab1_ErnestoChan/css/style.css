@@ -1,0 +1,11 @@
+
+input[type=text], {
+  width: 80%;
+}
+input[type=submit], {
+  float:right;
+}
+
+.container {
+  width:80%
+}
